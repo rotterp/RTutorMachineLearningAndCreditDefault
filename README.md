@@ -9,7 +9,7 @@ Concerning the problem set most exercises depend to a certain extent on each oth
 
 ## 1. Installation
 
-RTutor and this package are hosted on Github. To install everything, run the following code on your R console.
+RTutor and this package is hosted on Github. To install everything, run the following code in your R console.
 ```s
 if (!require(devtools))
   install.packages("devtools")
@@ -25,7 +25,7 @@ To start the problem set first create a working directory in which files like th
 library(RTutorMachineLearningAndCreditDefault)
 
 # Adapt your working directory to an existing folder
-setwd("C:/problemsets/RTutorOnlineDisclosure")
+setwd("C:/problemsets/RTutorMachineLearningAndCreditDefault")
 # Adapt your user name
 run.ps(user.name="YOURNAME", package="RTutorMachineLearningAndCreditDefault",
        load.sav=TRUE, sample.solution=FALSE)
