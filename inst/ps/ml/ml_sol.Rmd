@@ -2,7 +2,7 @@
 # Machine Learning And Credit Default: An Interactive Analysis In R
 
 #### **Author:** Patrick Rotter
-#### **Date:** 30/11/2017
+#### **Date:** 31/12/2017
 </div>
 #< ignore
 ```{r "create_ps",include=TRUE , eval=TRUE}
