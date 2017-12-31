@@ -204,6 +204,7 @@ This section investigates the loan grades assigned by Lending Club which are an 
 **Task:** The given code chunk looks for every loan between 2007 and 2011, which corresponds to the first period and drops all columns except `sub_grade`. The so-called pipe operator `%>%` combines both statements. The aforementioned is a convenient way to keep our code lean and efficient. Finally, the function `table()` returns the distribution of loan grades between 2007 and 2011.
 
 ```{r "2.1__1dii", optional=TRUE}
+#< task
 library(dplyr)
 
 data %>%
@@ -214,6 +215,7 @@ data %>%
   # Return the distribution of loans subject to
   # the different loan grades
   table()
+#>
 ```
 
 We can see, that loan grades are positively skewed, which implies, that most borrowers who took out a loan between 2007 and 2011 had a good credit score. The next task continues our loan grade research for the whole time span.
@@ -221,6 +223,7 @@ We can see, that loan grades are positively skewed, which implies, that most bor
 **Task:** This code chunk counts the observations for each `grade` and `status_group` (a grouped version of the possible loan statuses). The function `substr(???, start, stop)` retains only the part of a string indexed by 'start' and 'stop'. As `sub_grade` has values ranging from 'A1', 'A2', 'A3' to 'G5', `substr(sub_grade, 1, 1)` transforms those strings to 'A', 'A', 'A' ..., 'G'. This allows summarizing the `sub_grade` in five more suitable grade classes. Afterwards, the results are grouped by their `grade`, as the function `group_by()` creates groups based on one or more variables of our data set and allows to perform aggregations for each group separately. In a final step, the function `mutate()` adds a new column with the relative frequency of loans within each `grade`.
 
 ```{r "2.1__1p"}
+#< task
 library(dplyr)
 
 data %>%
@@ -240,6 +243,7 @@ data %>%
 
 # Return the new data set dat
 dat
+#>
 ```
 
 Notice, that 'Current & Issued' in conjunction with 'Paid' seems to account for the lions share for each `grade`. The next task visualizes our results. 
@@ -295,6 +299,7 @@ For the remainder of this section, we explore the average FICO score over differ
 **Task:** The following code calculates the average FICO score `avg_fico` categorized by `period`. As Lending Club has published their data unevenly, the first `period` comprises loans issued between 2007 and 2011, while the last `period` corresponds to the second quarter of 2017 only.  Since there is no assignment, the result is returned.
 
 ```{r "2.1__1edsfs", optional=TRUE}
+#< task
 library(dplyr)
 
 data %>%
@@ -302,6 +307,7 @@ data %>%
   group_by(period) %>%
   # Compute the average FICO score in each group
   summarize(avg_fico = mean(fico_range_high)) 
+#>
 ```
 
 The average FICO score in the first period is the highest. However, the variation is relatively small. Thus, we will explore the FICO scores as a combination of `period` and their respective US state in the next task.
@@ -1000,10 +1006,12 @@ Remember, we assigned our linear model to a variable called `model`. The functio
 The following `predict()` returns a vector of our predictions for the variable `Y` utilizing the vector `Z`. 
 
 ```{r "3.2__7", eval=FALSE}
+#< task
 # Predict requires a data.frame
 test <- data.frame(Z = c(3,4,5))
 
 predict(model, test)
+#>
 ``` 
 
 If you want to learn more about the latter and other functions of R, have a look at the RDocumentation: <a href="https://www.rdocumentation.org/" target = "_blank"> www.rdocumentation.org/</a>. Besides, other packages in R exist, to perform linear regressions in a more sophisticated way, for example, `lfe`. Nonetheless, due to our small sample size in conjunction with the exemplary nature of this part, base R functions are appropriate.
