@@ -1,0 +1,76 @@
+
+---
+title: "Machine Learning And Credit Default: An Interactive Analysis In R"
+author: "Patrick Rotter"
+date: December 26, 2017
+output:
+  word_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+# Load libraries and source extra code
+library(caret)
+library(Ckmeans.1d.dp)
+library(dplyr)
+library(dygraphs)
+library(ggplot2)
+library(geojson)
+library(geojsonio)
+library(glmnet)
+library(htmltools)
+library(leaflet)
+library(plotly)
+library(pROC)
+library(randomForest)
+library(rattle)
+library(RColorBrewer)
+library(rpart)
+library(stargazer)
+library(stats)
+library(tidyr)
+library(tidytext)
+library(widyr)
+library(wordcloud)
+library(xgboost)
+library(RTutor)
+source("complements.R")
+
+# render data frames similar to the RTutor browser
+RTutor::set.knit.print.opts(html.data.frame = TRUE, table.max.rows = 25, round.digits = 8, signif.digits = 8)
+
+# continue knitting even if there is an error
+knitr::opts_chunk$set(error = TRUE) 
+```
+
+
+# Header 1
+
+Texttextextextext textextextext
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+other styling `highlight2`
+`highlight1`.
+
+
+```{r "2_1",eval=FALSE}
+library(dplyr)
+
+data %>%
+  # Filter for loans between 2007 and 2011
+  filter(period == 1) %>%
+  # Drop all variables except sub_grade
+  select(sub_grade) %>%
+  # Return the distribution of loans subject to
+  # the different loan grades
+  table()
+```
+
+
+- list123
+- list234
+- list345

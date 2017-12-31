@@ -1,0 +1,13 @@
+  .dygraph-title {
+    font-family: "Verdana";
+    font-size: 24px;
+    font-style: normal;
+    color: grey;
+    font-weight: bold;
+  }
+  .dygraph-axis-label {
+    font-family: Verdana";
+    font-size: 12px;
+    font-style: normal;
+    color: grey;
+  }

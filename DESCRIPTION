@@ -1,0 +1,12 @@
+Package: RTutorMachineLearningAndCreditDefault
+Type: Package
+Title: Machine Learning and Credit Default: An Interactive Analysis in R
+Version: 0.1
+Date: 2017-31-12
+Author: Patrick Rotter
+Maintainer: Patrick Rotter <rotterpatrick@gmail.com>
+Description: Researching credit default in combination with machine learning algorithms.
+License:
+	Problem set content: Creative Commons (CC BY-SA)
+	Package code: GPL >= 2.0
+Depends: RTutor, caret, Ckmeans.1d.dp, dplyr, dygraphs, ggplot2, geojson, geojsonio, glmnet, htmltools, leaflet, plotly, pROC, randomForest, rattle, RColorBrewer, rpart, stargazer, stats, tidyr, tidytext, widyr, wordcloud, xgboost

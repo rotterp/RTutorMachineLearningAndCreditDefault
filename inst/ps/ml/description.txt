@@ -1,0 +1,196 @@
+orgvar | var | descr
+
+loan_amnt | loan_amnt | The amount of the loan, the borrower applied for. 
+term | term | The number of monthly payments. There are two values possible: '36' and '60'.
+int_rate | int_rate | The interest rate, the borrower has to pay.
+sub_grade | sub_grade | The loan grade assigned by Lending Club. Values range from 'A1' (lowest interest rate) to 'G5' (highest interest rate).
+home_ownership | home_ownership | The home ownership status provided by a borrower during his registration.
+annual_inc | annual_inc | The annual income provided by the borrower during registration.
+issue_d | issue_d | The month which the loan was financed.
+desc | desc | An optional description of the loan's characteristics provided by the borrower.
+purpose | purpose | A fixed category chosen by the borrower.
+title | title | A loan title provided by the borrower.
+dti | dti | Lending Club Dictionary: A ratio calculated using the borrower's total monthly debt payments on the total debt obligations, excluding mortgage and the requested LC loan, divided by the borrower’s self-reported monthly income.
+fico_range_low | fico_range_low | Lower boundary of the borrower's FICO score at the time of loan origination.
+fico_range_high | fico_range_high | Upper boundary of the borrower's FICO score at the time of loan origination.
+state | state | The full state name provided by the borrower in his loan application. E.g. 'Arizona', 'Georgia', 'Illinois', ...
+loan_status | loan_status | The current status of the loan. Keep in mind loan_status might change, when the data set gets revised.
+period | period | A variable which correspons to the different data sets available from Lending Club. Please have a look at the problem set for a detailed breakdown.
+status_group | status_group | The grouped version of loan_status. There are three status groups possible: 'Paid', 'Late' and 'Current & Issued'. 'Late' comprises every loan in grace period or late in payment.
+last_fico_range_high | last_fico_range_high | The most recent upper boundary of the borrower's FICO score.
+ 
+verification_status | verification_status | Indicates whether the income or income source was verified by Lending Club
+addr_state | addr_state | The abbreviated state provided by the borrower in his loan application.. E.g. 'AZ', 'GA', 'IL', ... 
+revol_bal | revol_bal | The total revolving credit balance.
+initial_list_status | initial_list_status | The initial listing status of the loan.
+grade | grade | The loan grade assigned by Lending Club without further subdivisions:  Values range from 'A' (lowest interest rate) to 'G' (highest interest rate).
+month | month | The month of loan origination.
+year | year | The year of loan origination.
+
+default | default | An aggregated version of loan_status. The possible values are 'Paid' and 'Default'.
+mean_fico_range | mean_fico_range | The calculated mean between figo_range_low and fico_range_high at loan origination.
+installment | installment | The monthly payment required to be paid by a borrower.
+grade_B | grade_B | A binary dummy, 1 if the loan was graded as B.
+grade_C | grade_C | A binary dummy, 1 if the loan was graded as C.
+grade_D | grade_D | A binary dummy, 1 if the loan was graded as D.
+grade_E | grade_E | A binary dummy, 1 if the loan was graded as E.
+grade_F | grade_F | A binary dummy, 1 if the loan was graded as F.
+grade_G | grade_G | A binary dummy, 1 if the loan was graded as G.
+emp_length_1_year | emp_length_1_year | A binary dummy, 1 if the employment length of the borrower is 1 year.               
+emp_length_2_years | emp_length_2_years | A binary dummy, 1 if the employment length of the borrower is 2 years.                 
+emp_length_3_years | emp_length_3_years | A binary dummy, 1 if the employment length of the borrower is 3 years.        
+emp_length_4_years | emp_length_4_years | A binary dummy, 1 if the employment length of the borrower is 4 years.      
+emp_length_5_years | emp_length_5_years | A binary dummy, 1 if the employment length of the borrower is 5 years.      
+emp_length_6_years | emp_length_6_years | A binary dummy, 1 if the employment length of the borrower is 6 years.      
+emp_length_7_years | emp_length_7_years | A binary dummy, 1 if the employment length of the borrower is 7 years.      
+emp_length_8_years | emp_length_8_years | A binary dummy, 1 if the employment length of the borrower is 8 years.      
+emp_length_9_years | emp_length_9_years | A binary dummy, 1 if the employment length of the borrower is 9 years.      
+emp_length___10_years | emp_length___10_years | A binary dummy, 1 if the employment length of the borrower is 10 years.
+home_ownership_OWN | home_ownership_OWN | A binary dummy indicating the home ownership status provided by the borrower during registration. 
+home_ownership_RENT | home_ownership_RENT | A binary dummy indicating the home ownership status provided by the borrower during registration.
+verification_status_Source_Verified | verification_status_Source_Verified | A binary dummy indicating whether the income source of the borrower was verified.
+verification_status_Verified | verification_status_Verified | A binary dummy indicating whether the income source of the borrower was verified.
+
+purpose_credit_card | purpose_credit_card | A binary dummy indicating the loan's purpose choosen by the borrower.                  
+purpose_debt_consolidation | purpose_debt_consolidation | A binary dummy indicating the loan's purpose choosen by the borrower.     
+purpose_educational | purpose_educational | A binary dummy indicating the loan's purpose choosen by the borrower.                  
+purpose_home_improvement | purpose_home_improvement | A binary dummy indicating the loan's purpose choosen by the borrower.         
+purpose_house | purpose_house | A binary dummy indicating the loan's purpose choosen by the borrower.                       
+purpose_major_purchase | purpose_major_purchase | A binary dummy indicating the loan's purpose choosen by the borrower.            
+purpose_medical | purpose_medical | A binary dummy indicating the loan's purpose choosen by the borrower.                    
+purpose_moving | purpose_moving | A binary dummy indicating the loan's purpose choosen by the borrower.                     
+purpose_other | purpose_other | A binary dummy indicating the loan's purpose choosen by the borrower.                    
+purpose_renewable_energy | purpose_renewable_energy | A binary dummy indicating the loan's purpose choosen by the borrower.          
+purpose_small_business | purpose_small_business | A binary dummy indicating the loan's purpose choosen by the borrower.             
+purpose_vacation | purpose_vacation | A binary dummy indicating the loan's purpose choosen by the borrower.                   
+purpose_wedding | purpose_wedding | A binary dummy indicating the loan's purpose choosen by the borrower.                    
+addr_state_AL | addr_state_AL | A binary dummy indicating the borrower's state.                    
+addr_state_AR | addr_state_AR | A binary dummy indicating the borrower's state.                      
+addr_state_AZ | addr_state_AZ | A binary dummy indicating the borrower's state.                      
+addr_state_CA | addr_state_CA | A binary dummy indicating the borrower's state.                     
+addr_state_CO | addr_state_CO | A binary dummy indicating the borrower's state.                   
+addr_state_CT | addr_state_CT | A binary dummy indicating the borrower's state.                       
+addr_state_DC | addr_state_DC | A binary dummy indicating the borrower's state. 
+addr_state_DE | addr_state_DE | A binary dummy indicating the borrower's state.                       
+addr_state_FL | addr_state_FL | A binary dummy indicating the borrower's state.                       
+addr_state_GA | addr_state_GA | A binary dummy indicating the borrower's state.                       
+addr_state_HI | addr_state_HI | A binary dummy indicating the borrower's state.                       
+addr_state_IA | addr_state_IA | A binary dummy indicating the borrower's state.                       
+addr_state_ID | addr_state_ID | A binary dummy indicating the borrower's state.                       
+addr_state_IL | addr_state_IL | A binary dummy indicating the borrower's state.                       
+addr_state_IN | addr_state_IN | A binary dummy indicating the borrower's state.                       
+addr_state_KS | addr_state_KS | A binary dummy indicating the borrower's state.                       
+addr_state_KY | addr_state_KY | A binary dummy indicating the borrower's state.                       
+addr_state_LA | addr_state_LA | A binary dummy indicating the borrower's state.                       
+addr_state_MA | addr_state_MA | A binary dummy indicating the borrower's state.                     
+addr_state_MD | addr_state_MD | A binary dummy indicating the borrower's state.                       
+addr_state_ME | addr_state_ME | A binary dummy indicating the borrower's state.                       
+addr_state_MI | addr_state_MI | A binary dummy indicating the borrower's state.                     
+addr_state_MN | addr_state_MN | A binary dummy indicating the borrower's state.                       
+addr_state_MO | addr_state_MO | A binary dummy indicating the borrower's state.                       
+addr_state_MS | addr_state_MS | A binary dummy indicating the borrower's state.                       
+addr_state_MT | addr_state_MT | A binary dummy indicating the borrower's state.                       
+addr_state_NC | addr_state_NC | A binary dummy indicating the borrower's state.                       
+addr_state_ND | addr_state_ND | A binary dummy indicating the borrower's state.                       
+addr_state_NE | addr_state_NE | A binary dummy indicating the borrower's state.                       
+addr_state_NH | addr_state_NH | A binary dummy indicating the borrower's state.                       
+addr_state_NJ | addr_state_NJ | A binary dummy indicating the borrower's state.                       
+addr_state_NM | addr_state_NM | A binary dummy indicating the borrower's state.                     
+addr_state_NV | addr_state_NV | A binary dummy indicating the borrower's state.                       
+addr_state_NY | addr_state_NY | A binary dummy indicating the borrower's state.                     
+addr_state_OH | addr_state_OH | A binary dummy indicating the borrower's state.                       
+addr_state_OK | addr_state_OK | A binary dummy indicating the borrower's state.                       
+addr_state_OR | addr_state_OR | A binary dummy indicating the borrower's state.                       
+addr_state_PA | addr_state_PA | A binary dummy indicating the borrower's state.                       
+addr_state_RI | addr_state_RI | A binary dummy indicating the borrower's state.                       
+addr_state_SC | addr_state_SC | A binary dummy indicating the borrower's state.                       
+addr_state_SD | addr_state_SD | A binary dummy indicating the borrower's state.                       
+addr_state_TN | addr_state_TN | A binary dummy indicating the borrower's state.                       
+addr_state_TX | addr_state_TX | A binary dummy indicating the borrower's state.                      
+addr_state_UT | addr_state_UT | A binary dummy indicating the borrower's state.                       
+addr_state_VA | addr_state_VA | A binary dummy indicating the borrower's state.                       
+addr_state_VT | addr_state_VT | A binary dummy indicating the borrower's state.                       
+addr_state_WA | addr_state_WA | A binary dummy indicating the borrower's state.                       
+addr_state_WI | addr_state_WI | A binary dummy indicating the borrower's state.                       
+addr_state_WV | addr_state_WV | A binary dummy indicating the borrower's state.                       
+addr_state_WY | addr_state_WY | A binary dummy indicating the borrower's state.                                               
+delinq_2yrs | delinq_2yrs | Lending Club Dictionary: The number of 30+ days past-due incidences of delinquency in the borrower's credit file for the past 2 years.                       
+inq_last_6mths | inq_last_6mths | Lending Club Dictionary: The number of inquiries in past 6 months (excluding auto and mortgage inquiries).                     
+open_acc | open_acc | The number of open credit lines.                          
+pub_rec | pub_rec | Lending Club Dictionary: The number of derogatory public records.                          
+revol_bal | revol_bal | The total revolving credit balance.                         
+revol_util | revol_util | Lending Club Dictionary: Revolving line utilization rate, or the amount of credit the borrower is using relative to all available revolving credit.                         
+total_acc | total_acc | Lending Club Dictionary: The total number of credit lines currently in the borrower's credit file.                      
+initial_list_status_w | initial_list_status_w | A binary dummy indicating the initial listing status of the loan.             
+collections_12_mths_ex_med | collections_12_mths_ex_med | Lending Club Dictionary: Number of collections within last 12 months excluding medical collections at time of application for the secondary applicant.         
+tot_coll_amt | tot_coll_amt | Lending Club Dictionary: Total collection amounts ever owed.                   
+total_rev_hi_lim | total_rev_hi_lim | Lending Club Dictionary: Total revolving high credit/credit limit.                   
+acc_open_past_24mths | acc_open_past_24mths | Lending Club Dictionary: Number of trades opened in past 24 months.             
+bc_open_to_buy | bc_open_to_buy | Lending Club Dictionary: Total open to buy on revolving bankcards.                    
+bc_util | bc_util | Lending Club Dictionary: Ratio of total current balance to high credit/credit limit for all bankcard accounts.                          
+chargeoff_within_12_mths | chargeoff_within_12_mths | Lending Club Dictionary: Number of charge-offs within 12 months.            
+delinq_amnt | delinq_amnt | Lending Club Dictionary: The past-due amount owed for the accounts on which the borrower is now delinquent.
+x | x | Values concerning the abscissa (x-axis).
+y | y | Values concerning the ordinate (y-axis).
+false_positive_rate | false_positive_rate | The false positive rate (wrongly assigned as positive).
+false_positive_rate | false_positive_rate | The true positive rate (correctly assigned as positive).                       
+mo_sin_old_il_acct | mo_sin_old_il_acct | Lending Club Dictionary: Months since oldest bank installment account opened.                 
+mo_sin_old_rev_tl_op | mo_sin_old_rev_tl_op | Lending Club Dictionary: Months since oldest revolving account opened.             
+mo_sin_rcnt_rev_tl_op | mo_sin_rcnt_rev_tl_op | Lending Club Dictionary: Months since most recent revolving account opened.             
+mo_sin_rcnt_tl | mo_sin_rcnt_tl | Lending Club Dictionary: Months since most recent account opened.                    
+mort_acc | mort_acc | Lending Club Dictionary: Number of mortgage accounts.                          
+num_accts_ever_120_pd | num_accts_ever_120_pd | Lending Club Dictionary: Number of accounts ever 120 or more days past due.        
+num_actv_bc_tl | num_actv_bc_tl | Lending Club Dictionary: Number of currently active bankcard accounts.                   
+num_actv_rev_tl | num_actv_rev_tl | Lending Club Dictionary: Number of currently active revolving trades.                 
+num_bc_sats | num_bc_sats | Lending Club Dictionary: Number of satisfactory bankcard accounts.                       
+num_bc_tl | num_bc_tl | Lending Club Dictionary: Number of bankcard accounts.                       
+num_il_tl | num_il_tl | Lending Club Dictionary: Number of installment accounts.                        
+num_op_rev_tl | num_op_rev_tl | Lending Club Dictionary: Number of open revolving accounts.                    
+num_rev_accts | num_rev_accts | Lending Club Dictionary: Number of revolving accounts.                     
+num_rev_tl_bal_gt_0 | num_rev_tl_bal_gt_0 | Lending Club Dictionary: Number of revolving trades with balance >0.               
+num_sats | num_sats | Lending Club Dictionary: Lending Club Dictionary: Number of satisfactory accounts.                          
+num_tl_90g_dpd_24m | num_tl_90g_dpd_24m | Lending Club Dictionary: Number of accounts 90 or more days past due in last 24 months.
+num_tl_op_past_12m | num_tl_op_past_12m | Lending Club Dictionary: Number of accounts opened in past 12 months.               
+pct_tl_nvr_dlq | pct_tl_nvr_dlq | Lending Club Dictionary: Percent of trades never delinquent.                    
+percent_bc_gt_75 | percent_bc_gt_75 | Lending Club Dictionary: Percentage of all bankcard accounts > 75% of limit.                 
+pub_rec_bankruptcies | pub_rec_bankruptcies | The public records regarding bankruptcies.              
+tax_liens | tax_liens | Lending Club Dictionary: The number of tax liens.                          
+tot_hi_cred_lim | tot_hi_cred_lim | Lending Club Dictionary: Total high credit/credit limit.               
+total_bal_ex_mort | total_bal_ex_mort |  Lending Club Dictionary: Total credit balance excluding mortgage.               
+total_bc_limit | total_bc_limit | Lending Club Dictionary: Total bankcard high credit/credit limit.                    
+total_il_high_credit_limit | total_il_high_credit_limit | Lending Club Dictionary: Total installment high credit/credit limit.          
+mean_fico_range | mean_fico_range | The average fico range of the borrower during loan application.                  
+month_02 | month_02 | A binary dummy indicating the month of loan issuance.                           
+month_03 | month_03 | A binary dummy indicating the month of loan issuance.                           
+month_04 | month_04 | A binary dummy indicating the month of loan issuance.                           
+month_05 | month_05 | A binary dummy indicating the month of loan issuance.                           
+month_06 | month_06 | A binary dummy indicating the month of loan issuance.                           
+month_07 | month_07 | A binary dummy indicating the month of loan issuance.                           
+month_08 | month_08 | A binary dummy indicating the month of loan issuance.                           
+month_09 | month_09 | A binary dummy indicating the month of loan issuance.                           
+month_10 | month_10 | A binary dummy indicating the month of loan issuance.                          
+month_11 | month_11 | A binary dummy indicating the month of loan issuance.                           
+month_12 | month_12 | A binary dummy indicating the month of loan issuance.                          
+year_2012 | year_2012 | A binary dummy indicating the year of loan issuance.                          
+year_2013 | year_2013 | A binary dummy indicating the year of loan issuance.                        
+year_2014 | year_2014 | A binary dummy indicating the year of loan issuance.                          
+year_2015 | year_2015 | A binary dummy indicating the year of loan issuance.                          
+year_2016 | year_2016 | A binary dummy indicating the year of loan issuance.                          
+year_2017 | year_2017 | A binary dummy indicating the year of loan issuance.                          
+issue_d_to_ear_cr | issue_d_to_ear_cr | The difference between the date of earliest credit line and loan issuance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
