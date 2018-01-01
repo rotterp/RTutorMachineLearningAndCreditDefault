@@ -1542,12 +1542,15 @@ For the remainder of the problem set, the approach will be as follows: we will i
 Please recall the definition of the probability of default, which we denote in accordance with James et al. (2017, p. 131) as follows:
 
 \[ \begin{eqnarray}
-p(X) &=& Pr(Y = 1|X) = Pr(default = 1|X) \\\\
-&=& \beta_0 + \beta_1 X_1 + \dots + \beta_k X_k
+p(X) &=& Pr(Y = 1|X) = Pr(default = 1|X) \\
 \end{eqnarray} \]
 
-As before \(k\) corresponds to the number of predictors, while \(Y\) represents the binary response and \(X\) constitutes the matrix of predictors. 
-Continuing the idea of logistic regression, one can fit a so-called logistic function \(f(X\beta) = \frac{e^{X\beta}}{1+e^{X\beta}}\), which limits our predicted probability to values between 0 and 1.
+Continuing the idea of logistic regression, one can fit a so-called logistic function \(f(X\beta) = \frac{e^{X\beta}}{1+e^{X\beta}}\), which yields the following probability of default.
+
+\[ \begin{eqnarray}
+p(X) &=& \frac{e^{X\beta}}{1+e^{X\beta}} \\
+\end{eqnarray} \]
+
 Besides, apart from the logit model, other logistic regressions can be performed. <a href="http://public.eblib.com/choice/publicfullrecord.aspx?p=1051443" target = "_blank">Fitzmaurice et al. (2011)</a> offer a broad spectrum of applications in conjunction with <a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470582472.html" target = "_blank">Hosmer et al. (2013)</a>. Both books discuss alternatives and extensions to the logit model, as well as other logistic models.
 
 #### Odds
